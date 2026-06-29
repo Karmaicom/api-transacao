@@ -1,6 +1,8 @@
 # Gradle
 .gradle/
 build/
+
+# Manter o Gradle Wrapper versionado
 !gradle/wrapper/gradle-wrapper.jar
 
 # Java
