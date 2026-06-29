@@ -33,7 +33,7 @@ public class EstatisticasController {
             @RequestParam(value = "intervalorDeBusca", required = false, defaultValue = "60") Integer intervalorDeBusca) {
 
         log.info("Busca de estatisticas");
-        return ResponseEntity.status(HttpStatus.OK).body(estatisticasService.getEstatisticas(intervalorDeBusca));
+        return ResponseEntity.status(HttpStatus.OK).body(estatisticasService.calcularEstatisticasTransacoes(intervalorDeBusca));
 
     }
 

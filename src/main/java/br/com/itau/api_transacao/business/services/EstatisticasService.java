@@ -16,7 +16,7 @@ public class EstatisticasService {
 
     private final TransacaoService transacaoService;
 
-    public EstatisticasResponseDTO getEstatisticas(Integer intervaloDeBusca) {
+    public EstatisticasResponseDTO calcularEstatisticasTransacoes(Integer intervaloDeBusca) {
 
         log.info("Iniciada a busca da estatistica da transações pelo período de tempo " +  intervaloDeBusca + " segundos");
 
