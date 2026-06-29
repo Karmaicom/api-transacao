@@ -2,6 +2,9 @@ spring:
   application:
     name: api-transacao
 
+server:
+  port: 8082
+
 management:
   endpoints:
     web:
@@ -26,3 +29,7 @@ management:
 
 springdoc:
   show-actuator: true
+  swagger-ui:
+    path: /
+  api-docs:
+    path: /v3/api-docs

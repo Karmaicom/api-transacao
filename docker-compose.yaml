@@ -1,0 +1,22 @@
+services:
+  api-transacao:
+    container_name: api-transacao
+    image: api-transacao:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - api-transacao-logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - api-transacao-network
+
+networks:
+  api-transacao-network:
+    name: api-transacao-network
+
+volumes:
+  api-transacao-logs:
+    name: api-transacao-logs

@@ -32,9 +32,9 @@ public class ResponseTimeFilter extends OncePerRequestFilter {
 
             System.out.println(
                     "Método Http: " + methodName +
-                    "| URL: " + uri +
-                    "| Status: " + statusCode +
-                    "| Tempo de resposta: " + responseTime + " ms");
+                    " | URL: " + uri +
+                    " | Status: " + statusCode +
+                    " | Tempo de resposta: " + responseTime + " ms");
         }
 
 
